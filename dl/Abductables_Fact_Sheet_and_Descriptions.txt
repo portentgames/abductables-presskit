@@ -1,0 +1,54 @@
+ABDUCTABLES — FACT SHEET
+
+Developer: Portent Games (one-person studio)
+Publisher: Self-published
+Release date: December 7, 2026
+Platform: Windows PC (Steam)
+Price: $6.99 USD
+Genre: Incremental roguelite / arcade action
+Players: Single-player
+Engine: Unity
+Free demo: on Steam now (the first town, Level A)
+Languages: interface in 12 languages (English, Simplified Chinese, Traditional Chinese, Japanese, Korean, Russian, German, French, Spanish, Portuguese (Brazil), Polish, Turkish). Audio: English.
+Music: original soundtrack composed by the developer (3 tracks, in the press kit)
+Controls: mouse and keyboard, or full gamepad support (Xbox and PlayStation controllers)
+Steam: https://store.steampowered.com/app/5183930/Abductables/
+Discord: https://discord.gg/JcHnTZPeA
+Press contact: [PRESS EMAIL]
+
+
+ONE-LINE PITCH
+Pilot a flying saucer through a 1950s sci-fi comic, beam up whole crowds, and escape an army that escalates to five stars.
+
+
+SHORT DESCRIPTION (about 50 words)
+Abductables is an incremental roguelite in a vintage sci-fi comic. Pilot a flying saucer, beam up whole crowds of farmers, cows, cops and soldiers, stack them for huge combo payouts, and bank permanent upgrades before the army fills the sky. Every run sends a stronger saucer back to Earth.
+
+
+LONG DESCRIPTION
+Abductables is an incremental roguelite where you pilot a flying saucer and pull humans off the ground with your tractor beam. Stack as many as you can into one abduction, convert them into alien-human hybrids, and cash in for big combo payouts. Every run earns money for permanent upgrades, so each attempt sends a stronger saucer back down to Earth.
+
+The longer you stay, the harder the humans hit back. Police cars and searchlight helicopters give way to soldiers, rocket troopers, an army tank, a cannon gunship, radar trucks that strip your cloak, leech drones that drain your power, and a rival saucer that steals your crowds. Fight back with Field Kits like the EMP Pulse, then use the biomass tractor beam to haul the wreckage aboard for extra points. Survive long enough and the Grigori Group sends a memo: pick one of three Directives that changes the rules for the rest of the run.
+
+It all looks like a vintage comic come to life: ink outlines, halftone dots and lettered sound effects, across three towns: a summer-Americana suburb, a 1950s pre-code horror town and a desert town in 1980s horror-comic colors.
+
+
+FEATURES
+- Beam up whole crowds at once: the bigger the batch, the bigger the combo payout.
+- Permanent upgrades between runs: lift more per pull, hold more power, push combos higher.
+- An armed response that escalates to five stars: police, helicopters, soldiers, rocket troopers, an army tank, a gunship, radar trucks, leech drones, agents in purple sedans and a rival saucer.
+- Field Kits to fight back: EMP Pulse, Arc Coil, Decoy Saucer, Forget-Me Flash, Chaff and a cloak.
+- Heavy Lift: upgrade the biomass tractor beam to haul trees, wrecks and even a whole tank aboard.
+- Directives: mid-run memos from the Grigori Group add a new rule for the rest of the act, like Legacy Recall, where a beamed cryptid makes the whole batch pay double.
+- Vintage comic-print art: ink, halftone dots and lettered sound effects like MAYDAY! and KA-BLAM!
+- Three towns, each with its own comic palette.
+- Running out of power doesn't end your run: the saucer limps on at half speed on the biomass beam until you refuel.
+
+
+ABOUT PORTENT GAMES
+Portent Games is a one-person indie studio. Abductables is designed, built and art-directed by a solo developer.
+[OPTIONAL: add your name, where you're based, and a sentence about you.]
+
+
+USAGE
+Screenshots, GIFs, clips, trailer, music, logo and key art in this kit may be used freely in coverage, videos and streams of Abductables. Monetizing videos of Abductables is allowed.

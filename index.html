@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abductables Press Kit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Patrick+Hand+SC&family=Barlow:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Night-sky comic page: navy sky, beam yellow, logo red, memo-paper cream, ink. Layout: hero art, then a fact-sheet sidebar beside the copy, then asset galleries. */
+  --sky:#18204a;
+  --sky-deep:#10163a;
+  --ink:#0d0b14;
+  --paper:#efe6cf;
+  --paper-ink:#2a2230;
+  --beam:#f6c64a;
+  --red:#d2412f;
+  --teal:#7cc3d6;
+  --muted:#aab3d8;
+  --line:rgba(239,230,207,.18);
+  --display:"Luckiest Guy","Bangers",Impact,system-ui,sans-serif;
+  --hand:"Patrick Hand SC","Comic Sans MS",system-ui,sans-serif;
+  --body:"Barlow",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{background:var(--sky-deep)}
+body{margin:0;background:var(--sky-deep);color:var(--paper);font:400 17px/1.55 var(--body);
+  background-image:radial-gradient(rgba(124,195,214,.10) 1px,transparent 1.4px);background-size:7px 7px}
+img,video{max-width:100%;display:block}
+a{color:var(--beam)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--beam);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:.02em;text-wrap:balance;margin:0}
+h2{font-size:clamp(28px,4vw,40px);color:var(--beam);text-shadow:3px 3px 0 var(--red),5px 5px 0 var(--ink)}
+.kicker{font-family:var(--hand);font-size:19px;color:var(--teal);letter-spacing:.04em}
+section{padding:44px 0;border-top:1px dashed var(--line)}
+section header{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:10px 20px;margin-bottom:20px}
+.note{color:var(--muted);font-size:15px}
+
+/* hero */
+.hero{position:relative;background:var(--ink)}
+.hero img{width:100%;height:auto;max-height:620px;object-fit:cover;object-position:center 42%}
+.strip{background:var(--paper);color:var(--paper-ink);border-bottom:4px solid var(--ink)}
+.strip .wrap{display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;justify-content:space-between;padding-top:18px;padding-bottom:18px}
+.pitch{font-size:clamp(19px,2.2vw,23px);font-weight:500;max-width:640px;margin:0}
+.facts{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-family:var(--hand);font-size:18px;background:var(--ink);color:var(--paper);padding:4px 12px;border-radius:3px;transform:rotate(-1deg)}
+.chip.y{background:var(--beam);color:var(--ink)}
+.chip.r{background:var(--red);color:var(--paper)}
+.actions{display:flex;flex-wrap:wrap;gap:10px;padding:22px 0 6px}
+.btn{font:400 19px/1 var(--display);letter-spacing:.03em;border:3px solid var(--ink);background:var(--beam);color:var(--ink);padding:12px 18px 10px;border-radius:4px;box-shadow:4px 4px 0 var(--ink);cursor:pointer;text-decoration:none;display:inline-flex;gap:8px;align-items:center}
+.btn:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink)}
+.btn.alt{background:var(--paper)}
+.btn.red{background:var(--red);color:var(--paper)}
+.btn.sm{font-size:15px;padding:8px 11px 6px;box-shadow:3px 3px 0 var(--ink);border-width:2px}
+.btn[disabled]{opacity:.6;cursor:progress}
+
+/* fact sheet + copy */
+.cols{display:grid;grid-template-columns:330px 1fr;gap:32px;align-items:start}
+.sheet{background:var(--paper);color:var(--paper-ink);padding:22px 22px 18px;border:3px solid var(--ink);box-shadow:6px 6px 0 var(--ink);position:relative}
+.sheet:before{content:"FACT SHEET";position:absolute;top:-16px;left:16px;background:var(--red);color:var(--paper);font:400 17px/1 var(--display);padding:7px 10px 5px;border:2px solid var(--ink)}
+.sheet dl{margin:8px 0 0;display:grid;gap:10px}
+.sheet dt{font-family:var(--hand);font-size:16px;color:#6b5d4f;line-height:1.1}
+.sheet dd{margin:0;font-weight:500;font-size:16px;line-height:1.35;overflow-wrap:anywhere}
+.sheet a{color:#8a2a1e}
+.copy h3{font-size:24px;color:var(--paper);margin:26px 0 8px}
+.copy h3:first-child{margin-top:0}
+.copy p{max-width:68ch;margin:0 0 12px}
+.copybox{position:relative;background:rgba(239,230,207,.06);border:1px solid var(--line);border-left:4px solid var(--beam);padding:14px 16px;margin:0 0 6px;max-width:72ch}
+.copybox p:last-child{margin-bottom:0}
+.copyrow{display:flex;gap:10px;align-items:center;margin:0 0 6px}
+.features{list-style:none;padding:0;margin:0;display:grid;gap:8px;max-width:72ch}
+.features li{padding-left:28px;position:relative}
+.features li:before{content:"";position:absolute;left:2px;top:.45em;width:14px;height:14px;background:var(--beam);clip-path:polygon(50% 0,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
+
+/* media grids */
+.trailer{border:3px solid var(--ink);box-shadow:6px 6px 0 var(--ink);background:#000;width:100%;aspect-ratio:16/9}
+.grid{display:grid;gap:16px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g5{grid-template-columns:repeat(5,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--sky);border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink);display:flex;flex-direction:column}
+.card .media{position:relative;background:#000;cursor:zoom-in;border:0;padding:0;width:100%}
+.card .media img,.card .media video{width:100%;height:auto}
+.card .cap{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:9px 10px;font-size:14px;color:var(--muted);flex-wrap:wrap}
+.card .cap span{flex:1 1 140px;font-family:var(--hand);font-size:16px;color:var(--paper);line-height:1.15}
+.vert video{aspect-ratio:9/16;object-fit:cover}
+.art .media{background:repeating-conic-gradient(#2a3166 0 25%,#222957 0 50%) 0 0/18px 18px;cursor:default;display:flex;align-items:center;justify-content:center;aspect-ratio:4/3}
+.art .media img{max-height:100%;width:auto;max-width:100%;object-fit:contain}
+.dlrow{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.status{font-family:var(--hand);font-size:17px;color:var(--teal);min-height:1.3em}
+
+.tracks{display:grid;gap:12px;max-width:760px}
+.track{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;background:var(--sky);border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink);padding:10px 12px}
+.track span{font-family:var(--hand);font-size:18px;min-width:150px}
+.track audio{flex:1 1 260px;min-width:0;height:36px}
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.panel{background:var(--paper);color:var(--paper-ink);border:3px solid var(--ink);box-shadow:6px 6px 0 var(--ink);padding:20px 22px}
+.panel h3{font-size:24px;color:var(--red);margin-bottom:8px}
+.panel p{margin:0 0 10px}
+.fill{background:#fff3b0;border:2px dashed var(--red);padding:1px 6px;font-weight:700}
+footer{padding:30px 0 50px;color:var(--muted);font-size:14px;border-top:1px dashed var(--line)}
+
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(5,6,16,.92);display:none;align-items:center;justify-content:center;padding:20px;z-index:10;flex-direction:column;gap:12px}
+.lb.open{display:flex}
+.lb img{max-height:84vh;width:auto;border:3px solid var(--ink)}
+.lb .row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+
+@media (max-width:980px){.g5{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(2,1fr)}.cols{grid-template-columns:1fr}}
+@media (max-width:640px){.g3,.g5{grid-template-columns:repeat(2,1fr)}.contact{grid-template-columns:1fr}body{font-size:16px}}
+@media (max-width:420px){.g3,.g4{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <img src="art/hero_1920.jpg" alt="Abductables key art: a flying saucer beams a farmer and a cow up from a small town at night, under the Abductables logo." width="1920" height="1080">
+</div>
+
+<div class="strip">
+  <div class="wrap">
+    <p class="pitch">Pilot a flying saucer through a 1950s sci-fi comic, beam up whole crowds, and escape an army that escalates to five stars.</p>
+    <div class="facts">
+      <span class="chip y">Steam · Dec 7, 2026</span>
+      <span class="chip">$6.99</span>
+      <span class="chip">Windows PC</span>
+      <span class="chip r">Free demo out now</span>
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="actions">
+    <a class="btn" href="https://store.steampowered.com/app/5183930/Abductables/">Steam page</a>
+    <a class="btn alt" data-drive hidden href="#">Full press kit (Google Drive)</a>
+    <button class="btn alt" type="button" data-zip="all">Download everything on this page (.zip)</button>
+    <a class="btn red" href="#contact">Contact &amp; review keys</a>
+    <span class="status" id="status-all" aria-live="polite"></span>
+  </div>
+  <p class="note">Updated November 13, 2026. Everything on this page may be used in articles, videos and streams about Abductables. No embargo.</p>
+
+  <section id="trailer">
+    <header><h2>Official Trailer</h2><span class="kicker">66 seconds · gameplay from the first frame</span></header>
+    <video class="trailer" controls preload="metadata" poster="art/hero_1920.jpg" src="trailer/abductables_trailer_720p.mp4"></video>
+    <div class="dlrow" style="margin-top:16px">
+      <button class="btn sm" type="button" data-file="trailer/abductables_trailer_720p.mp4">Download trailer MP4 (720p)</button>
+      <a class="note" data-drive hidden href="#">The 1080p master and 35–45 s B-roll clips are in the full press kit on Google Drive.</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="cols">
+      <aside class="sheet" aria-label="Fact sheet">
+        <dl>
+          <div><dt>Title</dt><dd>Abductables</dd></div>
+          <div><dt>Developer / publisher</dt><dd>Portent Games (solo developer, self-published)</dd></div>
+          <div><dt>Release date</dt><dd>December 7, 2026</dd></div>
+          <div><dt>Platform</dt><dd>Windows PC (Steam)</dd></div>
+          <div><dt>Price</dt><dd>$6.99 USD</dd></div>
+          <div><dt>Genre</dt><dd>Incremental roguelite / arcade action</dd></div>
+          <div><dt>Players</dt><dd>Single-player</dd></div>
+          <div><dt>Demo</dt><dd>Free on Steam now (the first town)</dd></div>
+          <div><dt>Languages</dt><dd>Interface in 12: English, 简体中文, 繁體中文, 日本語, 한국어, Русский, Deutsch, Français, Español, Português (Brasil), Polski, Türkçe</dd></div>
+          <div><dt>Controls</dt><dd>Mouse &amp; keyboard or full gamepad (Xbox and PlayStation)</dd></div>
+          <div><dt>Engine</dt><dd>Unity</dd></div>
+          <div><dt>Steam</dt><dd><a href="https://store.steampowered.com/app/5183930/Abductables/">store.steampowered.com/app/5183930</a></dd></div>
+          <div><dt>Discord</dt><dd><a href="https://discord.gg/JcHnTZPeA">discord.gg/JcHnTZPeA</a></dd></div>
+        </dl>
+      </aside>
+
+      <div class="copy">
+        <h3>Short description</h3>
+        <div class="copybox" id="short"><p>Abductables is an incremental roguelite in a vintage sci-fi comic. Pilot a flying saucer, beam up whole crowds of farmers, cows, cops and soldiers, stack them for huge combo payouts, and bank permanent upgrades before the army fills the sky. Every run sends a stronger saucer back to Earth.</p></div>
+        <div class="copyrow"><button class="btn sm alt" type="button" data-copy="short">Copy</button><span class="status" id="status-short" aria-live="polite"></span></div>
+
+        <h3>Long description</h3>
+        <div class="copybox" id="long">
+          <p>Abductables is an incremental roguelite where you pilot a flying saucer and pull humans off the ground with your tractor beam. Stack as many as you can into one abduction, convert them into alien-human hybrids, and cash in for big combo payouts. Every run earns money for permanent upgrades, so each attempt sends a stronger saucer back down to Earth.</p>
+          <p>The longer you stay, the harder the humans hit back. Police cars and searchlight helicopters give way to soldiers, rocket troopers, an army tank, a cannon gunship, radar trucks that strip your cloak, leech drones that drain your power, and a rival saucer that steals your crowds. Fight back with Field Kits like the EMP Pulse, then use the biomass tractor beam to haul the wreckage aboard for extra points. Survive long enough and the Grigori Group sends a memo: pick one of three Directives that changes the rules for the rest of the run.</p>
+          <p>It all looks like a vintage comic come to life, with ink outlines, halftone dots and lettered sound effects, across three towns: a summer-Americana suburb, a 1950s pre-code horror town and a desert town in 1980s horror-comic colors.</p>
+        </div>
+        <div class="copyrow"><button class="btn sm alt" type="button" data-copy="long">Copy</button><span class="status" id="status-long" aria-live="polite"></span></div>
+
+        <h3>Features</h3>
+        <ul class="features">
+          <li>Beam up whole crowds at once: the bigger the batch, the bigger the combo payout.</li>
+          <li>Permanent upgrades between runs: lift more per pull, hold more power, push combos higher.</li>
+          <li>An armed response that climbs to five stars: police, helicopters, soldiers, rocket troopers, an army tank, a gunship, radar trucks, leech drones, agents in purple sedans and a rival saucer.</li>
+          <li>Field Kits to fight back: EMP Pulse, Arc Coil, Decoy Saucer, Forget-Me Flash, Chaff and a cloak.</li>
+          <li>Heavy Lift: upgrade the biomass beam to haul trees, wrecks and even a whole tank aboard.</li>
+          <li>Directives: mid-run memos add a new rule for the rest of the act, like Legacy Recall, where one beamed cryptid makes the whole batch pay double.</li>
+          <li>Vintage comic-print art with lettered sound effects like MAYDAY! and KA-BLAM!</li>
+          <li>Three towns, each in its own comic palette.</li>
+        </ul>
+
+        <h3>Press release</h3>
+        <p>Plain text, ready to paste. <button class="btn sm alt" type="button" data-file="dl/Abductables_Press_Release.txt">Download press release</button> <button class="btn sm alt" type="button" data-file="dl/Abductables_Fact_Sheet_and_Descriptions.txt">Download fact sheet</button></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="clips">
+    <header><h2>Creator Clips</h2><span class="kicker">Vertical 9:16 · 1080×1920 · 60 fps · in-game sound, no music</span></header>
+    <p class="note" style="margin:0 0 16px">Ready for Shorts, Reels and TikTok. Raw gameplay with no text, so you can add your own.</p>
+    <div class="grid g5 vert" id="vclips"></div>
+    <div class="dlrow" style="margin-top:16px"><button class="btn sm" type="button" data-zip="clips">Download all 5 clips (.zip)</button><span class="status" id="status-clips" aria-live="polite"></span></div>
+  </section>
+
+  <section id="gifs">
+    <header><h2>GIFs</h2><span class="kicker">6 loops · 640 px · under 10 MB each</span></header>
+    <div class="grid g3" id="gifgrid"></div>
+    <div class="dlrow" style="margin-top:16px"><button class="btn sm" type="button" data-zip="gifs">Download all GIFs (.zip)</button><span class="status" id="status-gifs" aria-live="polite"></span></div>
+  </section>
+
+  <section id="music">
+    <header><h2>Soundtrack</h2><span class="kicker">3 tracks · original music by Portent Games · 320 kbps MP3</span></header>
+    <p class="note" style="margin:0 0 16px">The music from the game and trailer, composed by the developer. Free to use in videos and streams about Abductables, monetized ones included.</p>
+    <div class="tracks" id="tracks"></div>
+    <div class="dlrow" style="margin-top:16px"><button class="btn sm" type="button" data-zip="music">Download the soundtrack (.zip)</button><span class="status" id="status-music" aria-live="polite"></span></div>
+  </section>
+
+  <section id="screenshots">
+    <header><h2>Screenshots</h2><span class="kicker">15 shots · 2560×1440 · no watermarks</span></header>
+    <div class="grid g3" id="shotgrid"></div>
+    <div class="dlrow" style="margin-top:16px"><button class="btn sm" type="button" data-zip="shots">Download all screenshots (.zip)</button><span class="status" id="status-shots" aria-live="polite"></span></div>
+  </section>
+
+  <section id="art">
+    <header><h2>Logo &amp; Key Art</h2><span class="kicker">PNG · transparent logo · with and without text</span></header>
+    <div class="grid g4 art" id="artgrid"></div>
+    <div class="dlrow" style="margin-top:16px"><button class="btn sm" type="button" data-zip="art">Download logo &amp; key art (.zip)</button><span class="status" id="status-art" aria-live="polite"></span></div>
+  </section>
+
+  <section id="studio">
+    <header><h2>About Portent Games</h2></header>
+    <p style="max-width:68ch;margin:0">Portent Games is a one-person indie studio. Abductables is designed, built and art-directed by a solo developer, who reads every bug report and translation note players send from the in-game FEEDBACK button.</p>
+  </section>
+
+  <section id="contact">
+    <header><h2>Contact &amp; Review Keys</h2></header>
+    <div class="contact">
+      <div class="panel">
+        <h3>Press &amp; creators</h3>
+        <p>Email: <span class="fill">[PRESS EMAIL]</span></p>
+        <p>Discord: <a href="https://discord.gg/JcHnTZPeA">discord.gg/JcHnTZPeA</a></p>
+        <p>Replies within 48 hours. Happy to do interviews or send extra footage.</p>
+      </div>
+      <div class="panel">
+        <h3>Review keys</h3>
+        <p>Steam keys are available for press, YouTubers and streamers. Email with a link to your outlet or channel and you'll get a key for the full game.</p>
+        <p>The free demo is on the <a href="https://store.steampowered.com/app/5183930/Abductables/">Steam page</a> now. No embargo. Monetizing videos of Abductables is fine.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">Abductables © 2026 Portent Games. Press kit updated November 13, 2026.</div></footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Screenshot viewer">
+  <img id="lbimg" alt="">
+  <div class="row">
+    <button class="btn sm" type="button" id="lbdl">Download full size</button>
+    <button class="btn sm alt" type="button" id="lbprev">◀ Prev</button>
+    <button class="btn sm alt" type="button" id="lbnext">Next ▶</button>
+    <button class="btn sm red" type="button" id="lbclose">Close</button>
+  </div>
+</div>
+
+<script src="js/jszip.min.js"></script>
+<script>
+const SHOTS=[
+ ["abductables_01_crowd_beam_five_star_chase","Crowd beam at five stars"],
+ ["abductables_02_heavy_lift_downed_gunship","Heavy Lift: hauling a downed gunship"],
+ ["abductables_03_desert_beaming_police_cars","Desert town: beaming up police cars"],
+ ["abductables_04_spotted_by_police_helicopter","SPOTTED! by a police helicopter"],
+ ["abductables_05_horror_town_spotlight_lift","Horror town: lift under the spotlight"],
+ ["abductables_06_highrise_spotted","Spotted over the high-rises"],
+ ["abductables_07_crimson_town_chase","Crimson town chase"],
+ ["abductables_08_desert_army_jets","Army jets over the desert"],
+ ["abductables_09_desert_radar_truck_sweep","Radar truck sweep"],
+ ["abductables_10_crimson_forest_heli_spotlight","Crimson forest, helicopter on your tail"],
+ ["abductables_11_tree_beam_and_crowd","Tree beam and crowd"],
+ ["abductables_12_marked_cloak_jammed","MARKED: cloak jammed"],
+ ["abductables_13_directive_memo_choice","Pick one of three Directives"],
+ ["abductables_14_legacy_recall_directive","Legacy Recall Directive"],
+ ["abductables_15_field_kit_shop","Field Kit shop"]];
+const CLIPS=[
+ ["abductables_vertical_emp_and_heavy_lift","EMP, crash, Heavy Lift"],
+ ["abductables_vertical_crowd_beam","Crowd beam"],
+ ["abductables_vertical_desert_jets","Desert jets"],
+ ["abductables_vertical_spotted_by_helicopter","Spotted by helicopter"],
+ ["abductables_vertical_crimson_forest_chase","Crimson forest chase"]];
+const GIFS=[
+ ["abductables_emp_downs_gunship","EMP downs the gunship"],
+ ["abductables_heavy_lift_wreck","Heavy Lift hauls the wreck"],
+ ["abductables_crowd_beam","Crowd beam"],
+ ["abductables_spotted_by_helicopter","Spotted by helicopter"],
+ ["abductables_desert_jets","Desert jets"],
+ ["abductables_crimson_forest_chase","Crimson forest chase"]];
+const ART=[
+ ["abductables_logo_transparent_trimmed.png","prev_logo.webp","Logo, transparent PNG"],
+ ["abductables_key_art_with_logo_1920x1080.png","prev_abductables_key_art_with_logo_1232x706.webp","Key art with logo, 1920×1080"],
+ ["abductables_key_art_no_text_1920x1080.png","prev_abductables_key_art_no_text_1920x1080.webp","Key art, no text, 1920×1080"],
+ ["abductables_key_art_no_text_3840x1240.png","prev_abductables_key_art_no_text_3840x1240.webp","Wide key art, no text, 3840×1240"],
+ ["abductables_key_art_vertical_748x896.png","prev_abductables_key_art_vertical_748x896.webp","Vertical key art, 748×896"],
+ ["abductables_key_art_portrait_600x900.png","prev_abductables_key_art_portrait_600x900.webp","Portrait key art, 600×900"],
+ ["abductables_key_art_with_logo_1232x706.png","prev_abductables_key_art_with_logo_1232x706.webp","Capsule with logo, 1232×706"],
+ ["abductables_icon_1024x1024.png","prev_abductables_icon_1024x1024.webp","Icon, 1024×1024"]];
+const MUSIC=[["Abductables_OST_01","Track 1 · 5:01"],["Abductables_OST_02","Track 2 · 5:01"],["Abductables_OST_03","Track 3 · 5:01"]];
+const ZIPS={
+ music:MUSIC.map(m=>"music/"+m[0]+".mp3"),
+ shots:SHOTS.map(s=>"shots/"+s[0]+".jpg"),
+ clips:CLIPS.map(c=>"clips/"+c[0]+".mp4"),
+ gifs:GIFS.map(g=>"gifs/"+g[0]+".gif"),
+ art:ART.map(a=>"art/"+a[0])};
+ZIPS.all=["dl/Abductables_Press_Release.txt","dl/Abductables_Fact_Sheet_and_Descriptions.txt","trailer/abductables_trailer_720p.mp4",...ZIPS.shots,...ZIPS.gifs,...ZIPS.clips,...ZIPS.art,...ZIPS.music];
+const ZIPNAMES={all:"Abductables_Press_Kit.zip",shots:"Abductables_Screenshots.zip",clips:"Abductables_Vertical_Clips.zip",gifs:"Abductables_GIFs.zip",art:"Abductables_Logo_and_Key_Art.zip",music:"Abductables_Soundtrack.zip"};
+
+const $=(s,r=document)=>r.querySelector(s);
+const el=(t,a={},kids=[])=>{const e=document.createElement(t);for(const k in a){if(k==="text")e.textContent=a[k];else e.setAttribute(k,a[k]);}kids.forEach(k=>e.appendChild(k));return e;};
+function dlButton(path,label){return el("button",{class:"btn sm","type":"button","data-file":path,text:label||"Download"});}
+
+// screenshots
+SHOTS.forEach((s,i)=>{
+  const m=el("button",{class:"media","type":"button","aria-label":"View "+s[1]});
+  m.appendChild(el("img",{src:"thumbs/"+s[0]+".webp",alt:s[1],loading:"lazy",width:"800",height:"450"}));
+  m.addEventListener("click",()=>openLb(i));
+  $("#shotgrid").appendChild(el("div",{class:"card"},[m,el("div",{class:"cap"},[el("span",{text:s[1]}),dlButton("shots/"+s[0]+".jpg")])]));
+});
+// vertical clips
+CLIPS.forEach(c=>{
+  const v=el("video",{src:"clips/"+c[0]+".mp4",poster:"vposter/"+c[0]+".webp",preload:"none",controls:"",playsinline:"",muted:""});
+  const m=el("div",{class:"media"});m.style.cursor="default";m.appendChild(v);
+  $("#vclips").appendChild(el("div",{class:"card"},[m,el("div",{class:"cap"},[el("span",{text:c[1]}),dlButton("clips/"+c[0]+".mp4","MP4")])]));
+});
+// gifs (preview as light mp4 loops)
+GIFS.forEach(g=>{
+  const v=el("video",{src:"gifprev/"+g[0]+".mp4",autoplay:"",loop:"",muted:"",playsinline:"",preload:"metadata","aria-label":g[1]});
+  v.muted=true;
+  const m=el("div",{class:"media"});m.style.cursor="default";m.appendChild(v);
+  $("#gifgrid").appendChild(el("div",{class:"card"},[m,el("div",{class:"cap"},[el("span",{text:g[1]}),dlButton("gifs/"+g[0]+".gif","GIF")])]));
+});
+if(matchMedia("(prefers-reduced-motion: reduce)").matches){document.querySelectorAll("#gifgrid video").forEach(v=>{v.removeAttribute("autoplay");v.setAttribute("controls","");v.pause();});}
+// art
+ART.forEach(a=>{
+  const m=el("div",{class:"media"});m.appendChild(el("img",{src:"art/"+a[1],alt:a[2],loading:"lazy"}));
+  $("#artgrid").appendChild(el("div",{class:"card"},[m,el("div",{class:"cap"},[el("span",{text:a[2]}),dlButton("art/"+a[0],"PNG")])]));
+});
+
+// music
+MUSIC.forEach(m=>{
+  const a=el("audio",{controls:"",preload:"none",src:"music/"+m[0]+".mp3","aria-label":m[1]});
+  const b=el("button",{class:"btn sm","type":"button","data-zip1":"music/"+m[0]+".mp3",text:"MP3"});
+  $("#tracks").appendChild(el("div",{class:"track"},[el("span",{text:m[1]}),a,b]));
+});
+
+// downloads: plain browser downloads (works on any host)
+const DRIVE_URL="";  // full-quality kit on Google Drive; set when available
+function say(id,msg){const s=document.getElementById(id);if(s)s.textContent=msg;}
+async function fetchBlob(path){const r=await fetch(path);if(!r.ok)throw new Error("Couldn't load "+path);return await r.blob();}
+function saveBlob(name,blob,statusId){const u=URL.createObjectURL(blob);const a=document.createElement("a");a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),60000);say(statusId,"Downloading "+name);}
+function saveFile(path,statusId){const a=document.createElement("a");a.href=path;a.download=path.split("/").pop();document.body.appendChild(a);a.click();a.remove();say(statusId,"Downloading "+path.split("/").pop());}
+if(DRIVE_URL){document.querySelectorAll("[data-drive]").forEach(e=>{e.href=DRIVE_URL;e.hidden=false;});}
+document.addEventListener("click",async ev=>{
+  const b=ev.target.closest("button[data-file],button[data-zip],button[data-zip1],button[data-copy]");if(!b)return;
+  if(b.dataset.zip1){saveFile(b.dataset.zip1,"status-music");return;}
+  if(b.dataset.copy){const t=document.getElementById(b.dataset.copy).innerText.trim();try{await navigator.clipboard.writeText(t);say("status-"+b.dataset.copy,"Copied.");}catch(e){say("status-"+b.dataset.copy,"Select the text and copy it with Ctrl+C.");}return;}
+  if(b.dataset.file){const p=b.dataset.file,name=p.split("/").pop();const sid=(b.closest("section")||{}).id;const st="status-"+(sid==="music"?"music":sid==="screenshots"?"shots":sid==="gifs"?"gifs":sid==="clips"?"clips":sid==="art"?"art":"all");
+    saveFile(p,st);return;}
+  if(b.dataset.zip){const k=b.dataset.zip,list=ZIPS[k],st="status-"+k;if(typeof JSZip==="undefined"){say(st,"The zip tool didn't load. Use the single-file buttons.");return;}
+    b.disabled=true;try{const z=new JSZip();let n=0;
+      for(const p of list){say(st,"Packing "+(++n)+" of "+list.length+"…");z.file(p,await fetchBlob(p));}
+      say(st,"Building zip…");const blob=await z.generateAsync({type:"blob",compression:"STORE"});saveBlob(ZIPNAMES[k],blob,st);}
+    catch(e){say(st,e.message||"Zip failed.");}b.disabled=false;}
+});
+
+// lightbox
+let cur=0;const lb=$("#lb"),lbimg=$("#lbimg");
+function openLb(i){cur=(i+SHOTS.length)%SHOTS.length;lbimg.src="shots/"+SHOTS[cur][0]+".jpg";lbimg.alt=SHOTS[cur][1];lb.classList.add("open");$("#lbclose").focus();}
+function closeLb(){lb.classList.remove("open");}
+$("#lbclose").onclick=closeLb;$("#lbprev").onclick=()=>openLb(cur-1);$("#lbnext").onclick=()=>openLb(cur+1);
+$("#lbdl").onclick=()=>saveFile("shots/"+SHOTS[cur][0]+".jpg","status-shots");
+lb.addEventListener("click",e=>{if(e.target===lb)closeLb();});
+document.addEventListener("keydown",e=>{if(!lb.classList.contains("open"))return;if(e.key==="Escape")closeLb();if(e.key==="ArrowLeft")openLb(cur-1);if(e.key==="ArrowRight")openLb(cur+1);});
+</script>
+</body>
+</html>
