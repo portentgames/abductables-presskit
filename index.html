@@ -362,7 +362,7 @@ MUSIC.forEach(m=>{
 });
 
 // downloads: plain browser downloads (works on any host)
-const DRIVE_URL="";  // full-quality kit on Google Drive; set when available
+const DRIVE_URL="https://drive.google.com/drive/folders/1bJI29AOoMSceXHJ_KrjQAU9Zu16KSmx5?usp=sharing";  // full-quality kit on Google Drive; set when available
 function say(id,msg){const s=document.getElementById(id);if(s)s.textContent=msg;}
 async function fetchBlob(path){const r=await fetch(path);if(!r.ok)throw new Error("Couldn't load "+path);return await r.blob();}
 function saveBlob(name,blob,statusId){const u=URL.createObjectURL(blob);const a=document.createElement("a");a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),60000);say(statusId,"Downloading "+name);}
